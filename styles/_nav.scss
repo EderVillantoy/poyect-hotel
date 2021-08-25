@@ -1,0 +1,805 @@
+.container-header {
+  background-image: url("/images/Mask Group.png");
+  width: 1850px;
+  height: 1080px;
+  object-fit: cover;
+  position: relative;
+  display: block;
+  margin: auto;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1080px;
+    content: "";
+    background: #2f3036;
+    opacity: 0.5;
+    z-index: 0;
+  }
+}
+
+.container-facilities {
+  background-image: url("/images/Mask Group 2.png");
+  width: 1850px;
+  height: 1080px;
+  object-fit: cover;
+  position: relative;
+  display: block;
+  margin: auto;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1080px;
+    content: "";
+    background: #2f3036;
+    opacity: 0.5;
+    z-index: 0;
+  }
+}
+
+.container-rooms {
+  background-image: url("/images/Mask Group 3.png");
+  width: 1850px;
+  height: 1080px;
+  object-fit: cover;
+  position: relative;
+  display: block;
+  margin: auto;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1080px;
+    content: "";
+    background: #2f3036;
+    opacity: 0.5;
+    z-index: 0;
+  }
+}
+
+.container-contact {
+  background-color: map-get($background-color, bg-two);
+  width: 1850px;
+  height: 465px;
+  object-fit: cover;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.header {
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    background-color: map-get($background-color, bg-four);
+    width: 248px;
+    height: 147px;
+    padding: 50px 28px;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+
+    &--one {
+      width: 190px;
+      height: 27px;
+    }
+
+    &--two {
+      width: 120px;
+      margin-left: 3rem;
+    }
+  }
+
+  &-menu {
+    margin-top: 44px;
+
+    &__list {
+      display: flex;
+
+      &--one {
+        margin-left: 103px;
+        color: map-get($background-color, bg-one);
+        text-decoration: none;
+        font-family: $font-global;
+
+        &:hover {
+          border-bottom: 1px solid #ffff;
+        }
+
+        &:active {
+          border-bottom: 2px solid #ffff;
+        }
+      }
+    }
+  }
+}
+
+.slide {
+  margin-left: 213px;
+  margin-top: 229px;
+
+  & h4 {
+    font-size: map-get($fonts-size, text-ten);
+    color: map-get($background-color, bg-one);
+    font-family: $font-global;
+  }
+
+  & h2 {
+    font-size: map-get($fonts-size, text-eleven);
+    color: map-get($background-color, bg-one);
+    font-family: $font-secondary;
+  }
+
+  & h3 {
+    font-size: map-get($fonts-size, text-four);
+    color: map-get($background-color, bg-one);
+    font-family: $font-secondary;
+  }
+  p {
+    width: 589px;
+    color: map-get($background-color, bg-one);
+    font-family: $font-global;
+    font-size: map-get($fonts-size, text-one);
+    line-height: 30px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.slidecontact {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+
+  & h2 {
+    color: map-get($background-color, bg-three);
+    font-family: $font-global;
+    font-size: map-get($fonts-size, text-eight);
+    font-weight: 900;
+    
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+
+  & button {
+    width: 180px;
+    height: 50px;
+    padding: 10px 25px 10px 60px;
+    position: relative;
+    background-color: map-get($background-color, bg-four);
+    border-radius: 0.8rem;
+    font-family: $font-global;
+    font-weight: 900;
+    color: map-get($background-color, bg-one);
+    font-size: 1.3rem;
+
+    &:hover {
+      border: 1px solid #fff;
+      cursor: pointer;
+    }
+  }
+
+  & img {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+  }
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+
+  & span {
+    color: map-get($background-color, bg-one);
+    font-family: $font-global;
+  }
+
+  & img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+  }
+}
+
+.container-main {
+  width: 1850px;
+  margin: auto;
+}
+
+.main {
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-family: $font-global;
+  margin-bottom: 200px;
+
+  & > p {
+    font-size: map-get($fonts-size, text-three);
+    text-align: center;
+    color: map-get($background-color, bg-two);
+    margin-top: 83px;
+    margin-bottom: 83px;
+  }
+
+  &-option {
+    display: flex;
+
+    &--left {
+      & h2 {
+        font-family: $font-secondary;
+        font-size: map-get($fonts-size, text-four);
+        color: map-get($background-color, bg-two);
+        margin-top: 130px;
+        margin-bottom: 19px;
+      }
+
+      & p {
+        width: 542px;
+        font-family: $font-global;
+        font-size: map-get($fonts-size, text-one);
+        line-height: 40px;
+        color: map-get($background-color, bg-two);
+      }
+    }
+
+    &--right {
+      margin-left: 113px;
+    }
+  }
+
+  &-border {
+    border-left: 2px solid #14274a;
+    margin-left: -48px;
+    padding-left: 48px;
+  }
+
+  &-btn {
+    width: 180px;
+    height: 50px;
+    padding: 10px 25px;
+    background-color: map-get($background-color, bg-four);
+    border-radius: 0.8rem;
+    font-family: $font-global;
+    font-weight: 900;
+    color: map-get($background-color, bg-one);
+    font-size: 1.8rem;
+    border: none;
+    margin-top: 30px;
+
+    &:hover {
+      border: 1px solid #14274a;
+      cursor: pointer;
+    }
+  }
+
+  &-bottom {
+    margin-top: 69px;
+  }
+
+  &-testimonial {
+    margin-top: 115px;
+    text-align: center;
+
+    & h2 {
+      font-family: $font-secondary;
+      font-size: map-get($fonts-size, text-four);
+      margin-bottom: 20px;
+      color: map-get($background-color, bg-two);
+    }
+
+    & p {
+      font-family: $font-global;
+      font-size: map-get($fonts-size, text-two);
+      margin-bottom: 20px;
+      color: map-get($background-color, bg-two);
+    }
+
+    & span {
+      font-family: $font-global;
+      font-size: map-get($fonts-size, text-one);
+      color: map-get($background-color, bg-two);
+    }
+  }
+
+  &-sequence {
+    &:last-child button {
+      margin-left: 10px;
+    }
+
+    & button {
+      width: 50px;
+      height: 50px;
+      padding: 10px 10px;
+      background-color: map-get($background-color, bg-four);
+      border-radius: 0.8rem;
+      font-family: $font-global;
+      font-weight: 900;
+      color: map-get($background-color, bg-one);
+      font-size: 2.5rem;
+      border: none;
+      margin-top: 38px;
+
+      &:hover {
+        border: 1px solid #14274a;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.main-facilities {
+  margin-top: 82px;
+  margin-bottom: 200px;
+
+  & > h2,p {
+    text-align: center;
+  }
+
+  & > h2 {
+    font-family: $font-secondary;
+    font-size: map-get($fonts-size, text-four);
+    color: map-get($background-color, bg-two);
+    margin-bottom: 28px;
+  }
+
+  & > p {
+    font-family: $font-global;
+    font-size: map-get($fonts-size, text-one);
+    color: map-get($background-color, bg-two);
+    line-height: 30px;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 82px;
+  }
+
+  &--img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 186px;
+    position: relative;
+
+    & h2 {
+      position: absolute;
+      top: 93%;
+      font-family: $font-global;
+      font-size: map-get($fonts-size, text-seven);
+      font-weight: 900;
+      width: 684px;
+      height: 75px;
+      background-color: map-get($background-color, bg-three);
+      text-align: center;
+      padding: 16px 40px; 
+      color: map-get($background-color, bg-two);
+    }
+  }
+}
+
+.main-rooms {
+  margin-top: 82px;
+  margin-bottom: 200px;
+
+  & > h2,p {
+    text-align: center;
+  }
+
+  & > h2 {
+    font-family: $font-secondary;
+    font-size: map-get($fonts-size, text-four);
+    color: map-get($background-color, bg-two);
+    margin-bottom: 28px;
+  }
+
+  & > p {
+    font-family: $font-global;
+    font-size: map-get($fonts-size, text-one);
+    color: map-get($background-color, bg-two);
+    line-height: 30px;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 82px;
+  }
+
+  &--img {
+    margin-bottom: 81px;
+  }
+
+  &--detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h2 {
+      height: 141px;
+      width: 1599px;
+      background-color: map-get($background-color, bg-two);
+      text-align: center;
+      color: map-get($background-color, bg-one);
+      font-size: map-get($fonts-size, text-four);
+      font-family: $font-global;
+      font-weight: 900;
+      padding: 43px 0px;
+    }
+  }
+
+  &--card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1599px;
+    height: 141px;
+    border: 2px solid #14274A;
+    margin-left: 125px;
+    border-radius: 0px 0px 15px 15px;
+    padding: 42px 60px;
+
+    &-one {
+      display: flex;
+      align-items: center;
+
+      & img{
+        width: 51px;
+        height: 51px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      & span {
+        font-family: $font-global;
+        font-weight: 900;
+        margin-left: 40px;
+        color: map-get($background-color, bg-two);
+      }
+    }
+
+    &-two {
+      & button {
+        width: 200px;
+        height: 50px;
+        padding: 10px 25px 10px 21px;
+        position: relative;
+        background-color: map-get($background-color, bg-four);
+        border-radius: 0.8rem;
+        font-family: $font-global;
+        font-weight: 900;
+        color: map-get($background-color, bg-one);
+        font-size: 1.5rem;
+        border: none;
+
+        &:hover {
+          border: 1px solid #14274a;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.main-contact {
+  margin-top: 261px;
+  margin-bottom: 488px;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $font-global;
+
+  & > h2 {
+    font-family: $font-secondary;
+    font-size: map-get($fonts-size, text-four);
+    color: map-get($background-color, bg-two);
+    margin-bottom: 18px;
+  }
+
+  & > p {
+    font-family: $font-global;
+    font-size: map-get($fonts-size, text-twelve);
+    margin-bottom: 167px;
+    line-height: 37px;
+  }
+
+  &--info {
+    display: flex;
+
+    &-one {
+      width: 50%;
+
+      & p {
+        width: 580px;
+        font-family: $font-global;
+        font-size: map-get($fonts-size, text-nine);
+        line-height: 49px;
+        margin-bottom: 28px;
+        color: map-get($background-color, bg-two);
+      }
+
+      & div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 54px;
+      }
+
+      & a {
+        font-family: $font-global;
+        font-size: map-get($fonts-size, text-nine); 
+        font-weight: 900;
+        text-decoration: none;
+        color: map-get($background-color, bg-two);
+        margin-right: 30px;
+      }
+
+      & span {
+        display: block;
+        width: 680px;
+        font-family: $font-global;
+        font-size: map-get($fonts-size, text-nine);
+        line-height: 49px;
+        color: map-get($background-color, bg-two);
+      }
+    }
+
+    &-two {
+      width: 50%;
+
+      & form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      &--first {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        & label {
+          font-family: $font-global;
+          font-size: map-get($fonts-size, text-one);
+          margin-bottom: 8px;
+          color: map-get($background-color, bg-two);
+        }
+
+        & input {
+          width: 570px;
+          height: 78px;
+          border: 2px solid rgba(20, 39, 74, 0.5);
+        }
+      }
+
+      &--second {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        & label {
+          font-family: $font-global;
+          font-size: map-get($fonts-size, text-one);
+          margin-bottom: 8px;
+          color: map-get($background-color, bg-two);
+        }
+
+        & input {
+          width: 570px;
+          height: 78px;
+          border: 2px solid rgba(20, 39, 74, 0.5);
+        }
+      }
+
+      &--third {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        & label {
+          font-family: $font-global;
+          font-size: map-get($fonts-size, text-one);
+          margin-bottom: 8px;
+          color: map-get($background-color, bg-two);
+        }
+
+        & textarea {
+          width: 570px;
+          height: 352px;
+          border: 2px solid rgba(20, 39, 74, 0.5);
+        }
+      }
+
+      &--fourth {
+        display: flex;
+        width: 570px;
+        justify-content:flex-end;
+
+        & button {
+          width: 180px;
+          height: 50px;
+          padding: 10px 25px;
+          background-color: map-get($background-color, bg-four);
+          border-radius: 0.8rem;
+          font-family: $font-global;
+          font-weight: 900;
+          color: map-get($background-color, bg-one);
+          font-size: 1.8rem;
+          border: none;
+          margin-top: 30px;  
+
+          &:hover {
+            border: 1px solid #14274a;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container-footer {
+  width: 1850px;
+  margin: auto;
+  background-color: map-get($background-color, bg-two);
+}
+
+.footer {
+  display: flex;
+  color: map-get($background-color, bg-one);
+  height: 320px;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #14274a;
+    transform: rotate(45deg);
+    left: 47%;
+    bottom: 84%;
+  }
+
+  &-leftone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 375px;
+  }
+
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    padding: 50px 28px 50px 1px;
+
+    &--a {
+      margin-top: -10px;
+    }
+
+    &--one {
+      width: 134px;
+    }
+
+    &--two {
+      width: 71px;
+      margin-left: 3rem;
+    }
+  }
+
+  &-underlogo {
+    display: flex;
+    flex-direction: column;
+
+    & span {
+      font-size: map-get($fonts-size, text-five);
+      line-height: 17px;
+      font-family: $font-global;
+    }
+  }
+
+  &-lefttwo {
+    width: 375px;
+    padding: 123px 0 82px;
+
+    & li {
+      margin-bottom: 20px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    & a {
+      color: map-get($background-color, bg-one);
+      text-decoration: none;
+      font-family: $font-global;
+      font-size: map-get($fonts-size, text-six);
+      font-weight: 700;
+    }
+  }
+
+  &-rightone {
+    width: 375px;
+    padding: 123px 0 82px;
+
+    & li {
+      margin-bottom: 23px;
+      color: map-get($background-color, bg-one);
+      font-family: $font-global;
+      font-size: map-get($fonts-size, text-six);
+      font-weight: 700;
+
+      &:hover{
+        cursor: pointer;
+      }
+
+      & img {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &-righttwo {
+    width: 375px;
+    padding: 123px 0 82px;
+
+    & span {
+      color: map-get($background-color, bg-one);
+      font-family: $font-global;
+      font-size: map-get($fonts-size, text-six);
+      font-weight: 700;
+    }
+
+    & input {
+      width: 278px;
+      height: 50px;
+      margin-top: 32px;
+      border: 3px solid #e0b973;
+      border-radius: 0.5rem;
+    }
+
+    & button {
+      width: 80px;
+      height: 50px;
+      margin-left: -7px;
+      border-radius: 0.5rem;
+      background-color: map-get($background-color, bg-four);
+      border: 3px solid #e0b973;
+      font-family: $font-global;
+      font-weight: 900;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
